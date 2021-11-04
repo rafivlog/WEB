@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bismillah{
+    font-size: 200%;
+    color: rgb(15, 228, 33);
+    text-align: center;
+}
+body{
+    background-color: rgb(51, 26, 26);
+    font-family: 'Fruktur', cursive;
+    font-size:120%;
+}
+.container{
+    max-width: 1300px;
+    background-color: maroon;
+    margin: 0 auto;
+    padding: 20px;
+}
+.profile-image{
+    width: 100px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 50%;
+    float: left;
+}
+.header-bio{
+    float: left;
+    padding: 40px;
+}
+.header-contact{
+    float: right;
+    padding: 30px;
+    
+}
+
+.header-contact a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.header-contact a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+.clear-div{
+    clear: both;
+}
+hr{
+    border: 3px solid black;
+    margin: 15px auto;
+    border-bottom: none;
+}
+
+
+/* personal section*/
+
+#personal-section{
+
+}
+.content{
+
+}
+.left-div{
+    width: 30%;
+    float: left;
+}
+.right-div{
+   width: 70%;
+   float: right;
+   text-align: justify;
+}
+
+
+/*education*/
+.education-right-left-div{
+    width: 50%;
+    float: left;
+}
+.education-right-left-div a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.education-right-left-div a:hover{
+    text-decoration: underline;
+    color: green;
+}
+.education-right-right-div{
+    width: 50%;
+    float: right;
+}
+.educatiob-right-right-div a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.educatiob-right-right-div a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+/*footerrr*/
+.footer{
+    text-align: right;
+}
