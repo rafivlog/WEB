@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    /* background-color: yellowgreen; */
+    display: grid;
+    grid-template-areas:
+    'h'
+    'm'
+    'm' 
+    'm'
+    'f'
+    ;
+}
+header{
+    grid-area: h;
+    background-color: orange;
+    width: 100%;
+    border: solid;
+}
+main{
+    grid-area: m;
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+
+}
+article{
+    display: grid;
+    grid-template-areas: 
+    's1 a1'
+    's2 a2'
+    's3 .'
+    ;
+    height: 100%;
+}
+
+
+
+section{
+   border: solid;
+}
+
+
+aside{
+  background-color: coral;
+  border: solid;
+}
+
+
+
+
+
+footer{
+    grid-area: f;
+    width: 100%;
+    background-color: violet;
+    display: grid;
+    grid-template-areas: 
+    'n1 n2'
+    ;
+    border: solid;
+}
+
+
+
+
+
+#sed1{
+    grid-area: s1;
+}
+#sed2{
+    grid-area: s2;
+}
+#sed3{
+    grid-area: s3;
+}
+#aside1{
+    grid-area: a1;
+}
+#aside2{
+    grid-area: a2;
+}
+#nav1{
+    grid-area: n1;
+}
+#nav2{
+    grid-area: n2;
+}
+
+@media screen and (max-width:600px) {
+    footer{
+            grid-template-areas: 
+        'n1'
+        'n2'
+        ;
+    }
+}
