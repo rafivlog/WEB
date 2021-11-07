@@ -1,0 +1,39 @@
+.navbar{
+    background-color: rgb(250, 191, 114);
+    padding: 1% 7%;
+    text-align: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2 rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.div-container{
+    display: inline;
+    position: relative;
+}
+
+.div-content{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background-color:grey;
+    text-align: left;
+    min-width: 100px;
+    display: none;
+}
+
+.div-content a{
+    display: block;
+    
+}
+
+.div-content a:hover{
+    background-color: maroon;
+}
+
+.div-container:hover .div-content{
+    display: block;
+}
