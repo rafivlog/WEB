@@ -1,0 +1,52 @@
+img{
+    max-width: 400px;
+    height: 200px;
+    border: 5px solid blue;
+    border-radius: 100%;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 18%;
+    
+    animation-name: sakib;
+    animation-duration: 3s;
+    animation-iteration-count: 3; /*Koybar animation korbe*/
+    animation-timing-function: linear;/*Asa jaowar speed dutay e soman thkbe*/
+    position: relative;
+}
+
+/* img:hover{
+    animation-name: sakib;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; /*hover korle animation sesh obdy ta theke jabe*/
+    
+/*} */
+
+
+
+
+
+@keyframes sakib {
+    /* from{
+        max-width: 200px;
+    }
+    to{
+        max-width: 500px;
+    } */
+
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 100px;
+        left: 0;
+        opacity: 0.5;
+        border-color: red;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+
+}
