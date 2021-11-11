@@ -10,7 +10,7 @@ img{
     
     animation-name: sakib;
     animation-duration: 3s;
-    animation-iteration-count: 3; /*Koybar animation korbe*/
+    animation-iteration-count: infinite; /*Koybar animation korbe*/
     animation-timing-function: linear;/*Asa jaowar speed dutay e soman thkbe*/
     position: relative;
 }
