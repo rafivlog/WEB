@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.skill-container{
+    background-color:  gray;
+    width: 500px;
+    padding: 20px;
+}
+
+.skill-container li{
+    list-style-type: none;
+    margin: 50px 0;
+    font-weight: bolder;
+    position: relative;
+}
+
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+
+    /*Progresss bar er jnne must*/
+    background-color: rgb(170, 167,173);
+    width: 100%;
+    height: 25px;
+    border-radius: 100px;
+}
+
+
+
+.skill-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+
+    /*Progresss bar er jnne must*/
+    background-color: rgb(249, 249,250);
+    width: 0%;
+    height: 25px;
+    border-radius: 100px;
+
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+
+
+.skill-container li.html::after{
+    animation-name: HTML;
+}
+
+@keyframes HTML {
+    to{
+        width: 90%;
+        background-color: orange;
+    }
+}
+
+
+.skill-container li.css::after{
+    animation-name: CSS;
+}
+
+@keyframes CSS {
+    to{
+        width: 70%;
+        background-color: yellow;
+    }
+}
+
+
+
+.skill-container li.js::after{
+    animation-name: JS;
+}
+
+@keyframes JS {
+    to{
+        width: 50%;
+        background-color: blue;
+    }
+}
+
+
+.skill-container li.bt::after{
+    animation-name: BT;
+}
+
+@keyframes BT {
+    to{
+        width: 65%;
+        background-color: red;
+    }
+}
